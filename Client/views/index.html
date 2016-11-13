@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title><%= title %></title>
+    <title>YACS 2.0 - The Better Course Scheduler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -15,19 +15,21 @@
 </head>
 
 <body>
-    <div class="bs-docs-header" id="content">
-        <div class="container">
-            <h1>Main Page</h1>
-            <p>DEMO DEMO DEMO</p>
-        </div>
+    <nav class="materialize-red darken-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="https://yacs.cs.rpi.edu/" class="brand-logo">YACS 2.0 beta</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Scheduler</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div class="row">
+        <a href="add.html" type="button" class="btn btn-primary">Add a Review</a>
     </div>
-    <div class="container" style="margin-top:30px;">
-        <div class="row">
-            <a href="add.html" type="button" class="btn btn-primary">Adding a piece of data</a>
-            <a href="update.html?Name_s=FFFF" type="button" class="btn btn-primary">Go to Update page</a>
-        </div>
-    </div>
-    <div class="container">
+    <div class="container" style="margin-top:70px">
+      <div class="row" style="center">
+          <a href="add.html" type="button" class="btn btn-primary">Add a Review</a>
+      </div>
         <% demos.forEach(function( demo ){ %>
         <div class="row">
           <div class="col s12 m12 ">
@@ -38,14 +40,14 @@
                 I am convenient because I require little markup to use effectively.</p> -->
               </div>
               <div class="card-action">
-                <a href="index_2.html?Name_g=<%= demo %>">More</a>
+                <a href="index_2.html?Name_g=<%= demo %>">Click for class list</a>
               </div>
             </div>
           </div>
         </div>
         <% }); %>
 
-     </div> 
+     </div>
 </body>
 
 </html>
