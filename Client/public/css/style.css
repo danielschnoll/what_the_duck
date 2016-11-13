@@ -8,10 +8,12 @@
 
 body {
 	background: #e8f5e9;
+
 }
 nav {
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 99;
+	margin-bottom: 5em;
 }
 .main {
 	margin-top: 7em;
@@ -43,4 +45,7 @@ nav {
 }
 #cheese {
 	margin-top: 14em;
+}
+#Add_New {
+	margin-bottom: 2em;
 }
